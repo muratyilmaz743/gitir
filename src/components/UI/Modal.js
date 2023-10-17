@@ -21,7 +21,7 @@ const Modal = (props) => {
       {createPortal(<Backdrop />, portalElement)}
       {createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
-        portalElement,
+        portalElement, // also document.body works
       )}
     </Fragment>
   );
